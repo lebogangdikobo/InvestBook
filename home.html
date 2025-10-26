@@ -10,8 +10,8 @@
         <header class="navbar">
             <div class="logo">InvestBook</div>
             <nav class="nav-links">
-                <a href="#">Home</a>
-                <a  href="#">Explore</a>
+                <a href="home.html">Home</a>
+                <a  href="discover.html">Discover</a>
                 <a href="#">Messages</a>
                 <a href="#">Profile</a>
             </nav>
@@ -19,60 +19,73 @@
         </header>
 
         <!--Main LayOut-->
-        <div class="container">
-            <!--Feed section-->
-            <main class="Feed">
-                <section class="composer">
-                    <textarea id="composer-input" maxlength="280" placeholder="Share your investment thoughts..."></textarea>
-                    <div class="composer-actions">
-                        <span id="char-count">280</span>
-                        <button class="btnP-primary" id="post-btn">Post</button>
-                    </div>
-                </section>
+        <div class="app-layout">
 
-                <!--Example Post-->
-                <article class="post">
-                    <h3>InnovateTech</h3>
-                    <p>Exiting milestone! Our new prototype is ready for investors. 🚀  #Startup #Investment</p>
-                    <div class="post-footer">
-                        <span>💬 12</span>
-                        <span>❤️ 145</span>
-                        <span>🔁 10</span>
-                    </div>
-                </article>
-
-                <article class="post">
-                    <h3>GreenHarvest Farms</h3>
-                    <p>We've officially expanded to our 3rd urban farming site! 🌱 #Sustainability</p>
-                    <div class="post-footer">
-                        <span>💬 12</span>
-                        <span>❤️ 98</span>
-                        <span>🔁 5</span>
-                    </div>
-                </article>
-            </main>
-
-            <!--Side bar-->
-            <aside class="sidebar">
-                <div class="card">
-                    <h3>Trending Tops</h3>
-                    <ul>
-                        <li>#TechInvesting</li>
-                        <li>#GreenEnergy</li>
-                        <li>#Startups</li>
-                        <li>#Crypto</li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <h3>Suggested Investors</h3>
-                    <ul>
-                        <li>Jane Capital</li>
-                        <li>Venture Horizon</li>
-                        <li>SeedLink Partners</li>
-                    </ul>
-                </div>
+            <aside class="left-sidebar">
+                <ul>
+                    <li><a href="#"></a>🏠 Home</li>
+                    <li><a href="#">💼 Projects</a></li>
+                    <li><a href="#">👥 Investors</a></li>
+                    <li><a href="#">💬 Messages</a></li>
+                    <li><a href="#">📊 Investments</a></li>
+                    <li><a href="#">👤 Profile</a></li>
+                </ul>
             </aside>
+            <div class="container">
+                <!--Feed section-->
+                <main class="Feed">
+                    <section class="composer">
+                        <textarea id="composer-input" maxlength="280" placeholder="Share your investment thoughts..."></textarea>
+                        <div class="composer-actions">
+                            <span id="char-count">280</span>
+                            <button class="btnP-primary" id="post-btn">Post</button>
+                        </div>
+                    </section>
+
+                    <!--Example Post-->
+                    <article class="post">
+                        <h3>InnovateTech</h3>
+                        <p>Exiting milestone! Our new prototype is ready for investors. 🚀  #Startup #Investment</p>
+                        <div class="post-footer">
+                            <span>💬 12</span>
+                            <span>❤️ 145</span>
+                            <span>🔁 10</span>
+                        </div>
+                    </article>
+
+                    <article class="post">
+                        <h3>GreenHarvest Farms</h3>
+                        <p>We've officially expanded to our 3rd urban farming site! 🌱 #Sustainability</p>
+                        <div class="post-footer">
+                            <span>💬 12</span>
+                            <span>❤️ 98</span>
+                            <span>🔁 5</span>
+                        </div>
+                    </article>
+                </main>
+
+                <!--Side bar-->
+                <aside class="sidebar">
+                    <div class="card">
+                        <h3>Trending Tops</h3>
+                        <ul>
+                            <li>#TechInvesting</li>
+                            <li>#GreenEnergy</li>
+                            <li>#Startups</li>
+                            <li>#Crypto</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>Suggested Investors</h3>
+                        <ul>
+                            <li>Jane Capital</li>
+                            <li>Venture Horizon</li>
+                            <li>SeedLink Partners</li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
         </div>
 
         <script>

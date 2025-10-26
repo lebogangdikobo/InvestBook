@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+.sidebar{
+    width: 320px;
+    height: 100vh;
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo{
+    background-color: #00e0b0;
+    color: black;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+}
+
+.profile img{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.user-info h3{
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.user-info p{
+    margin: 2px 0 0;
+    color: #aaa;
+    font-size: 0.85em;
+}
+
+.menu-links{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    flex: 1;
+}
+
+.menu-links li{
+    padding: 12px 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #ddd;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-links li:hover{
+    background-color: #00e0b0;
+    color: black;
+}
+
+.logout{
+    border-top: 1px solid #333;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+footer{
+    text-align: center;
+    color: #777;
+    font-size: 0.85em;
+    margin-top: 15px;
+}
