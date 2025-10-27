@@ -69,5 +69,26 @@
             leftSidebar.classList.remove('open');
         });
     </script>
+
+    <script type="module">
+        import { getAuth, createUserWithEmailAndPassword } 
+            from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
+
+        const auth = getAuth();
+        const form = document.querySelector('.auth-form');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = form.email.value;
+            const password = form.password.value;
+
+            try {
+            await createUserWithEmailAndPassword(auth, email, password);
+            alert('Account created successfully!');
+            window.location.href = "home.html";
+            } catch (error) {
+            alert(error.message);
+            }
+        });
+    </script>
 </body>
 </html>

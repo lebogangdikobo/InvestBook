@@ -67,5 +67,27 @@
             leftSidebar.classList.remove('open');
         });
     </script>
+
+    <script type="module">
+        import { getAuth, signInWithEmailAndPassword } 
+            from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
+
+        const auth = getAuth();
+        const form = document.querySelector('.authForm');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = form.email.value;
+            const password = form.password.value;
+
+            try {
+            await signInWithEmailAndPassword(auth, email, password);
+            alert('Login successful!');
+            window.location.href = "home.html";
+            } catch (error) {
+            alert(error.message);
+            }
+        });
+    </script>
+
 </body>
 </html>
