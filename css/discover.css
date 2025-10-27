@@ -34,10 +34,22 @@ body {
     z-index: 20;
 }
 
-.navbar .logo {
-    font-weight: 700;
-    color: var(--accent);
-    font-size: 1.05rem;
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo{
+    background-color: #00e0b0;
+    color: black;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-links {
