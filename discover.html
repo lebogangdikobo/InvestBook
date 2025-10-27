@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<htmml lang="en">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width. initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Discover Projects</title>
+        <link rel="stylesheet" href="css/discover.css">
     </head>
     <body>
         <div class="container">
-            <header>
-                <h1>Discover Projects</h1>
-                <p>Top Perfoming - Attracting Investors</p>
+          
+            <header class="navbar">
+                <div class="logo">InvestBook</div>
+                
             </header>
+
+            <div class="main-header">
+                <h1>Discover Projects</h1>
+                <p>Top Performing - Attracting Investors</p>
+            </div>
 
             <nav class="tabs">
                 <button class="active">Trending</button>
@@ -20,7 +27,7 @@
             </nav>
 
             <main id="project-list">
-                <!--Example project-->
+                
                 <div class="project-card">
                     <div class="project-header">
                         <h2>InnovativeTech</h2>
@@ -30,7 +37,7 @@
                         </p>
                     </div>
 
-                    <div class="prject-stats">
+                    <div class="project-stats">
                         <div><strong>$1.2M</strong><br>Funding Raised</div>
                         <div><strong>58</strong><br>Investors</div>
                         <div><strong>9.5/10</strong><br>Trending Score</div>
@@ -55,11 +62,15 @@
                 </div>
             </main>
 
-            <footer>
-                <button>🏠 Home</button>
-                <button class="active">💡 Discover</button>
-                <button>💬 Messages</button>
-            </footer>
+            <nav class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="profile.html">Profile</a>
+                <a href="discover.html" class="active">Discover_Projects</a>
+                <a href="investors.html">Browse_Investors</a>
+                <a href="#">Investments</a>
+                <a href="#">Messages</a>
+                <a href="menu.html">Menu</a>
+            </nav>
         </div>
 
         <script src="script.js"></script>
