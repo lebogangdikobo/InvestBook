@@ -277,3 +277,87 @@ body {
 .nav-item span {
     font-size: 0.8rem;
 }
+
+/* Sidebar hidden by default */
+.left-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 240px;
+  background-color: #181818;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  padding: 20px;
+  z-index: 1000;
+  border-right: 2px solid #00e0b0;
+}
+
+/* Sidebar visible */
+.left-sidebar.open {
+  transform: translateX(0);
+}
+
+/* Menu button styling */
+.side-menu-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 26px;
+  background-color: #00e0b0;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.side-menu-btn:hover {
+  background-color: #00c49a;
+}
+
+/* Close button in sidebar */
+.close-btn {
+  background: none;
+  border: none;
+  color: #00e0b0;
+  font-size: 24px;
+  cursor: pointer;
+  float: right;
+}
+
+.menu-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    flex: 1;
+}
+
+.menu-links li {
+    padding: 12px 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #777;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-links li a {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+}
+
+.menu-links li:hover {
+    background-color: #00e0b0;
+    color: black;
+}
+
+.logout {
+    border-top: 1px solid #333;
+    margin-top: 10px;
+    padding: 15px;
+}

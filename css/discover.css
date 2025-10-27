@@ -310,7 +310,7 @@ body {
 .side-menu-btn {
   position: fixed;
   top: 20px;
-  left: 20px;
+  right: 20px;
   font-size: 26px;
   background-color: #00e0b0;
   color: #000;

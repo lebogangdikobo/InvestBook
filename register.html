@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="css/register.css">
 </head>
 <body>
+    <button id="menu-btn" class="side-menu-btn">☰</button>
+    <aside class="left-sidebar" id="left-sidebar">
+        <div class="close">
+            <button id="close-btn" class="close-btn">×</button>
+        </div>
+        <ul class="menu-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="discover.html">Discover Projects</a></li>
+            <li><a href="investors.html">Browse Investors</a></li>
+            <li><a href="#">Investments</a></li>
+            <li class="logout"><i class="sign-out">Sign Out</i></li>
+        </ul>
+    </aside>
+
     <div class="brand">
         <div class="logo">iB</div>
         <h2>InvestBook</h2>
@@ -37,5 +51,22 @@
             </form>
         </div>
     </div>
+
+    <script>
+        // Sidebar controls
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const leftSidebar = document.getElementById('left-sidebar');
+
+        // Open sidebar
+        menuBtn.addEventListener('click', () => {
+            leftSidebar.classList.add('open');
+        });
+
+        // Close sidebar
+        closeBtn.addEventListener('click', () => {
+            leftSidebar.classList.remove('open');
+        });
+    </script>
 </body>
 </html>
