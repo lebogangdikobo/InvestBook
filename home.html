@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>InvestBook-Home</title>
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/home.css">
+    </head>
+    <body>
+        
+        <header class="navbar">
+            <div class="logo" style="color: #1ed0a6">InvestBook</div>
+            <nav class="nav-links">
+                <a href="home.html" class="active">Home</a>
+                <a href="profile.html">Profile</a>
+                <a  href="discover.html">Discover_Projects</a>
+                <a href="investors.html">Browse_Investors</a>
+                <a href="#">Investments</a>
+                <a href="#">Messages</a>
+                <a href="menu.html">Menu</a>
+            </nav>
+            <button class="btn-primary">Post</button>
+        </header>
+
+       
+        <div class="app-shell">
+            <div class="device-mock">
+                <main class="feed">
+                    <section class="composer">
+                        <textarea id="composer-input" maxlength="280" placeholder="Share your investment thoughts..."></textarea>
+                        <div class="composer-actions">
+                            <span id="char-count">280</span>
+                            <button class="btn-post" id="post-btn">Post</button>
+                        </div>
+                    </section>
+
+                    
+                    <article class="post">
+                        <div class="post-head">
+                            <div class="avatar">IT</div>
+                            <div class="meta">
+                                <h3>InnovateTech</h3>
+                                <small>Exciting milestone • 2h</small>
+                                <img src="https://via.placeholder.com/60" alt="Team Photo">
+                            </div>
+                        </div>
+                        <p>Exiting milestone! Our new prototype is ready for investors. 🚀  <span class="tags">#Startup #Investment</span></p>
+                        <div class="post-footer">
+                            <span>⭐ 12</span>
+                            <span>💬 145</span>
+                            <span>🔁 10</span>
+                        </div>
+                    </article>
+
+                    <article class="post">
+                        <div class="post-head">
+                            <div class="avatar">GH</div>
+                            <div class="meta">
+                                <h3>GreenHarvest Farms</h3>
+                                <small>1d • Farming</small>
+                            </div>
+                        </div>
+                        <p>We've officially expanded to our 3rd urban farming site! 🌱 <span class="tags">#Sustainability</span></p>
+                        <div class="post-footer">
+                            <span>⭐ 9</span>
+                            <span>💬 98</span>
+                            <span>🔁 5</span>
+                        </div>
+                    </article>
+                </main>
+
+                <aside class="sidebar">
+                    <div class="card">
+                        <h4>Trending Topics</h4>
+                        <ul>
+                            <li>#TechInvesting</li>
+                            <li>#GreenEnergy</li>
+                            <li>#Startups</li>
+                            <li>#Crypto</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h4>Suggested Investors</h4>
+                        <ul>
+                            <li>Jane Capital</li>
+                            <li>Venture Horizon</li>
+                            <li>SeedLink Partners</li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <script>
+            // Safe char counter
+            const ta = document.getElementById('composer-input');
+            const count = document.getElementById('char-count');
+            if (ta && count) {
+                ta.addEventListener('input', () => { count.textContent = 280 - ta.value.length; });
+            }
+        </script>
+    </body>
+</html>

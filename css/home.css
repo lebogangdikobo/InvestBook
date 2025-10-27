@@ -1,0 +1,101 @@
+
+:root{
+    --bg:#121212;
+    --surface:#1b1b1b;
+    --muted:#9aa0a6;
+    --accent:#1ed0a6; 
+    --card:#161616;
+}
+
+
+body{
+    margin:0;
+    font-family:Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    background:linear-gradient(180deg,#0f0f0f 0%, #1a1a1a 100%);
+    color:#e6e6e6;
+}
+
+.navbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:14px 18px;
+    background:transparent;
+    position:sticky;
+    top:0;
+    z-index:20;
+}
+
+.logo {
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 1.05rem;
+}
+
+.nav-links a{color:var(--muted);margin:0 8px;text-decoration:none;font-size:0.95rem}
+.btn-primary{background:var(--accent);border:none;padding:8px 12px;border-radius:8px;color:#042;cursor:pointer}
+
+
+.app-shell{display:flex;justify-content:center;padding:28px 24px}
+.device-mock{
+    width:min(1100px,96%);
+    background:var(--surface);
+    border-radius:18px;
+    padding:18px;
+    box-shadow:0 18px 60px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+    display:grid;
+   
+    grid-template-columns: 1fr 320px;
+    gap:22px;
+    align-items:start;
+}
+
+
+@media (max-width:900px){
+    .device-mock{grid-template-columns:1fr; padding:12px}
+    .sidebar{order:2}
+}
+
+
+@media (min-width:1200px){
+    .device-mock{grid-template-columns: 640px 360px}
+}
+
+.feed{padding:8px 6px;overflow:hidden}
+.composer{background:transparent;margin-bottom:12px}
+.composer textarea{
+    width:100%;height:86px;background:transparent;border:1px solid rgba(255,255,255,0.03);border-radius:12px;padding:12px;color:inherit;resize:none;font-size:0.96rem
+}
+.composer-actions{display:flex;justify-content:space-between;align-items:center;margin-top:8px}
+.composer-actions #char-count{color:var(--muted);font-size:0.9rem}
+.btn-post{background:var(--accent);border:none;padding:8px 12px;border-radius:10px;color:#002;cursor:pointer}
+
+.post{background:var(--card);border-radius:12px;padding:12px;margin-bottom:12px;box-shadow:0 6px 14px rgba(0,0,0,0.5)}
+.post-head{display:flex;gap:10px;align-items:center;margin-bottom:6px}
+.avatar{width:44px;height:44px;border-radius:50%;background:#0f0f0f;color:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700}
+.meta h3{margin:0;font-size:1rem}
+.meta small{color:var(--muted)}
+.post p{color:#dcdcdc;margin:8px 0}
+.tags{color:var(--accent);font-weight:600}
+.post-footer{display:flex;gap:14px;color:var(--muted);font-size:0.95rem}
+
+.sidebar{padding:8px}
+.card{background:transparent;border-radius:12px;padding:10px;margin-bottom:12px;border:1px solid rgba(255,255,255,0.03)}
+.card h4{margin:0 0 8px 0;color:#dfe}
+.card ul{list-style:none;padding:0;margin:0}
+.card li{padding:6px 0;color:var(--muted);font-size:0.93rem}
+
+/* Small visual niceties */
+h3, h4{color:#eafaf2}
+small{color:var(--muted)}
+
+/* Make anchor links less bright in header */
+.nav-links{display:flex;gap:8px;align-items:center}
+
+/* Responsive tweak for very small screens */
+@media (max-width:420px){
+    .device-mock{border-radius:18px;padding:8px}
+    .avatar{width:38px;height:38px}
+}
+
+/* End of home.css */
