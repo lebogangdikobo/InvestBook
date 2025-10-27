@@ -17,17 +17,30 @@
             <nav class="nav-links">
                 <a href="home.html" class="active">Home</a>
                 <a href="register.html">Login/Register</a>
-                <a  href="discover.html">Discover_Projects</a>
-                <a href="investors.html">Browse_Investors</a>
+                <a  href="discover.html">Discover Projects</a>
+                <a href="investors.html">Browse Investors</a>
                 <a href="#">Investments</a>
                 <a href="#">Messages</a>
-                <a href="menu.html">Menu</a>
+               
             </nav>
             <button class="btn-primary">Post</button>
         </header>
 
        
         <div class="app-shell">
+            <button id="menu-btn" class="side-menu-btn">☰</button>
+            <aside class="left-sidebar" id="left-sidebar">
+                <div class="close">
+                    <button id="close-btn" class="close-btn">×</button>
+                </div>
+                <ul class="menu-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="discover.html">Discover Projects</a></li>
+                    <li><a href="investors.html">Browse Investors</a></li>
+                    <li><a href="#">Investments</a></li>
+                    <li class="logout"><i class="sign-out">Sign Out</i></a></li>
+                </ul>
+            </aside>
             <div class="device-mock">
                 <main class="feed">
                     <section class="composer">
@@ -97,12 +110,29 @@
         </div>
 
         <script>
-            // Safe char counter
-            const ta = document.getElementById('composer-input');
-            const count = document.getElementById('char-count');
-            if (ta && count) {
-                ta.addEventListener('input', () => { count.textContent = 280 - ta.value.length; });
-            }
+        // Character counter
+        const ta = document.getElementById('composer-input');
+        const count = document.getElementById('char-count');
+        if (ta && count) {
+            ta.addEventListener('input', () => { 
+            count.textContent = 280 - ta.value.length; 
+            });
+        }
+
+        // Sidebar controls
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const leftSidebar = document.getElementById('left-sidebar');
+
+        // Open sidebar
+        menuBtn.addEventListener('click', () => {
+            leftSidebar.classList.add('open');
+        });
+
+        // Close sidebar
+        closeBtn.addEventListener('click', () => {
+            leftSidebar.classList.remove('open');
+        });
         </script>
     </body>
 </html>

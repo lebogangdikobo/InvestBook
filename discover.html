@@ -8,7 +8,7 @@
     </head>
     <body>
         <div class="container">
-          
+            
             <div class="brand">
                 <div class="logo">iB</div>
                 <h2>InvestBook</h2>
@@ -18,7 +18,19 @@
                 <h1>Discover Projects</h1>
                 <p>Top Performing - Attracting Investors</p>
             </div>
-
+            <button id="menu-btn" class="side-menu-btn">☰</button>
+            <aside class="left-sidebar" id="left-sidebar">
+                <div class="close">
+                    <button id="close-btn" class="close-btn">×</button>
+                </div>
+                <ul class="menu-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="discover.html">Discover Projects</a></li>
+                    <li><a href="investors.html">Browse Investors</a></li>
+                    <li><a href="#">Investments</a></li>
+                    <li class="logout"><i class="sign-out">Sign Out</i></a></li>
+                </ul>
+            </aside>
             <nav class="tabs">
                 <button class="active">Trending</button>
                 <button>Most Funded</button>
@@ -69,10 +81,25 @@
                 <a href="investors.html">Browse_Investors</a>
                 <a href="#">Investments</a>
                 <a href="#">Messages</a>
-                <a href="menu.html">Menu</a>
             </nav>
         </div>
 
         <script src="script.js"></script>
+        <script>
+            // Sidebar controls
+            const menuBtn = document.getElementById('menu-btn');
+            const closeBtn = document.getElementById('close-btn');
+            const leftSidebar = document.getElementById('left-sidebar');
+
+            // Open sidebar
+            menuBtn.addEventListener('click', () => {
+                leftSidebar.classList.add('open');
+            });
+
+            // Close sidebar
+            closeBtn.addEventListener('click', () => {
+                leftSidebar.classList.remove('open');
+            });
+        </script>
     </body>
 </htmml>
