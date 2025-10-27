@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - InvestBook</title>
+    <link rel="stylesheet" href="css/messages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="messages-container">
+        <div class="header">
+            <div class="header-left">
+                <a href="#" class="back-button">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+                <div class="brand">
+                    <div class="logo">iB</div>
+                    <div class="header-title">InvestBook</div>
+                </div>
+            </div>
+            <div class="header-right">
+                <button id="menu-btn" class="side-menu-btn">☰</button>
+            </div>
+        </div>
+
+        <aside class="left-sidebar" id="left-sidebar">
+            <div class="close">
+                <button id="close-btn" class="close-btn">×</button>
+            </div>
+            <ul class="menu-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="discover.html">Discover Projects</a></li>
+                <li><a href="investors.html">Browse Investors</a></li>
+                <li><a href="investments.html">Investments</a></li>
+                <li><a href="messages.html">Messages</a></li>
+            </ul>
+        </aside>
+
+        <div class="search-container">
+            <div class="search-bar">
+                <input type="text" placeholder="Search" class="search-input">
+            </div>
+        </div>
+
+        <div class="messages-list">
+            <div class="message-item">
+                <div class="avatar">
+                    <img src="assets/innovatetech.png" alt="InnovateTech" onerror="this.style.display='none'">
+                </div>
+                <div class="message-content">
+                    <div class="message-header">
+                        <span class="sender-name">InnovateTech Official</span>
+                    </div>
+                    <div class="message-preview">Seeking seed until innovation</div>
+                    <div style="margin-top: 0.5rem;">
+                        <div>Your Investment: $2,500</div>
+                        <div>Equity Stake: Unrealized Current Valuation</div>
+                    </div>
+                    <div style="margin-top: 0.5rem;">
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="message-item">
+                <div class="avatar">
+                    <img src="assets/sarah.png" alt="Sarah Lee" onerror="this.style.display='none'">
+                </div>
+                <div class="message-content">
+                    <div class="message-header">
+                        <span class="sender-name">Sarah Lee</span>
+                        <span class="message-time">1:27</span>
+                    </div>
+                    <div class="message-preview">How I found to be your Investment...</div>
+                </div>
+            </div>
+
+            <div class="message-item">
+                <div class="avatar">
+                    <img src="assets/sarah2.png" alt="Sarah Lee" onerror="this.style.display='none'">
+                </div>
+                <div class="message-content">
+                    <div class="message-header">
+                        <span class="sender-name">Sarah Lee</span>
+                    </div>
+                    <div class="message-preview">At a small message for all users</div>
+                </div>
+            </div>
+
+            <div class="message-item">
+                <div class="avatar">
+                    <img src="assets/rajesh.png" alt="Rajesh Kumar" onerror="this.style.display='none'">
+                </div>
+                <div class="message-content">
+                    <div class="message-header">
+                        <span class="sender-name">Rajesh Kumar</span>
+                        <span class="message-time">1:35</span>
+                    </div>
+                    <div class="message-preview">I hope you have using our...</div>
+                </div>
+            </div>
+
+            <div class="message-item">
+                <div class="avatar">
+                    <img src="assets/alpesh.png" alt="Alpesh Kumar" onerror="this.style.display='none'">
+                </div>
+                <div class="message-content">
+                    <div class="message-header">
+                        <span class="sender-name">Alpesh Kumar</span>
+                    </div>
+                    <div class="message-preview">About your investment this time...</div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navigation">
+            <a href="home.html" class="nav-item">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="discover.html" class="nav-item">
+                <i class="fas fa-search"></i>
+                <span>Discover</span>
+            </a>
+            <a href="messages.html" class="nav-item active">
+                <i class="fas fa-comments"></i>
+                <span>Messages</span>
+            </a>
+        </nav>
+    </div>
+
+    <script src="js/menu.js"></script>
+</body>
+</html>
