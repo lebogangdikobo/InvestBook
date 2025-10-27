@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Investments</title>
+        <link rel="stylesheet" href="../css/discover.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="brand">
+                <div class="logo">iB</div>
+                <h2>InvestBook</h2>
+            </div>
+
+            <nav class="nav-links">
+                <a href="../home.html">Home</a>
+                <a href="../register.html">Login/Register</a>
+                <a href="../discover.html">Discover_Projects</a>
+                <a href="../investors.html">Browse_Investors</a>
+                <a href="investments.html" class="active">Investments</a>
+                <a href="../messages.html">Messages</a>
+            </nav>
+
+            <div class="main-header">
+                <h1>Investments</h1>
+                <p>Track Your Investment Portfolio</p>
+            </div>
+
+            <button id="menu-btn" class="side-menu-btn">☰</button>
+            <aside class="left-sidebar" id="left-sidebar">
+                <div class="close">
+                    <button id="close-btn" class="close-btn">×</button>
+                </div>
+                <ul class="menu-links">
+                    <li><a href="../home.html">Home</a></li>
+                    <li><a href="../discover.html">Discover Projects</a></li>
+                    <li><a href="../investors.html">Browse Investors</a></li>
+                    <li><a href="investments.html">Investments</a></li>
+                    <li><a href="../messages.html">Messages</a></li>
+                    <li class="logout"><i class="sign-out">Sign Out</i></li>
+                </ul>
+            </aside>
+
+            <nav class="tabs">
+                <button class="active">Investments Made</button>
+                <button>Investments Received</button>
+            </nav>
+
+            <main id="project-list">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h2>InnovateTech</h2>
+                        <p>Seeking seed funding to scale production</p>
+                    </div>
+
+                    <div class="project-stats">
+                        <div><strong>$2,500</strong><br>Your Investment</div>
+                        <div><strong>$6,000</strong><br>Current Value</div>
+                        <div><strong>100M</strong><br>Current Valuation</div>
+                    </div>
+
+                    <div class="milestone">
+                        <p>Next Milestone: Q4 2024</p>
+                    </div>
+
+                    <button class="details-btn">View Details</button>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h2>TrueGreenHarvest Farms</h2>
+                        <p>Equity Stake Raise: Equals $1.8M</p>
+                    </div>
+
+                    <div class="project-stats">
+                        <div><strong>$20,000</strong><br>Your Investment</div>
+                        <div><strong>$1.8%</strong><br>Equity Stake</div>
+                        <div><strong>3.5M</strong><br>Current Valuation</div>
+                    </div>
+
+                    <div class="rating">
+                        <span>★ 12</span>
+                    </div>
+
+                    <button class="details-btn">View Details</button>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h2>Alpha Robotics</h2>
+                        <p>Venture Cap $1.2B</p>
+                    </div>
+
+                    <div class="project-stats">
+                        <div><strong>1.2M</strong><br>Investment Received</div>
+                        <div><strong>Sarah Lee</strong><br>Lead Investor</div>
+                        <div><strong>R2</strong><br>Round</div>
+                    </div>
+
+                    <button class="details-btn">View Details</button>
+                </div>
+            </main>
+        </div>
+
+        <script src="../js/script.js"></script>
+        <script>
+            // Sidebar controls
+            const menuBtn = document.getElementById('menu-btn');
+            const closeBtn = document.getElementById('close-btn');
+            const leftSidebar = document.getElementById('left-sidebar');
+
+            // Open sidebar
+            menuBtn.addEventListener('click', () => {
+                leftSidebar.classList.add('open');
+            });
+
+            // Close sidebar
+            closeBtn.addEventListener('click', () => {
+                leftSidebar.classList.remove('open');
+            });
+        </script>
+    </body>
+</html>
